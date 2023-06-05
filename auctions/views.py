@@ -176,7 +176,7 @@ def register(request):
         if password != confirmation:
             return render(request, "auctions/register.html", {
                 "message": "Passwords must match."
-            })
+            }) 
 
         # Attempt to create new user
         try:
